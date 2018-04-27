@@ -1,0 +1,4 @@
+.open {
+  background: yellow;
+  height: 40rpx;
+}
