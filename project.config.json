@@ -4,9 +4,13 @@
 	"miniprogramRoot": "./client",
 	"qcloudRoot": "./server",
 	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
 		"newFeature": true
 	},
 	"appid": "wx7dc6e6f5e318010f",
-	"projectname": "DEV%E9%A1%B9%E7%9B%AE",
+	"projectname": "wafer",
 	"condition": {}
 }

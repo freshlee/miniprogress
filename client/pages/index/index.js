@@ -8,8 +8,7 @@ Page({
         userInfo: {},
         logged: false,
         takeSession: false,
-        requestResult: '',
-        newclass: 'open'
+        requestResult: ''
     },
 
     // 用户登录示例
@@ -217,10 +216,5 @@ Page({
         }
         util.showBusy('信道连接中...')
         this.setData({ tunnelStatus: 'closed' })
-    },
-    onReady () {
-      // wx.request({
-      //   url: '',
-      // })
     }
 })
