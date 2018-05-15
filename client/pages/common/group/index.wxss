@@ -1,0 +1,7 @@
+.group {
+  margin-top: 20rpx;
+  background: #fff;
+}
+.group:last-child {
+  border: none;
+}

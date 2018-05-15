@@ -3,12 +3,13 @@ var less = require('gulp-less')
 var path = require('path')
 var rename = require('gulp-rename')
 var fs = require('fs')
+var concat = require('gulp-concat')
 let config = {
   root: 'client/pages'
 }
 
 gulp.task('less', function () {
-  gulp.src('client/pages/**/*.less')
+  gulp.src('client/pages/**/*.less', {base: 'client/main.less'})
     .pipe(less())
     .pipe(rename(path => {
       path.extname = '.wxss'

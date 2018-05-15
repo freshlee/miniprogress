@@ -1,0 +1,116 @@
+page {
+  height: 100%;
+}
+.community {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+}
+.community .nav {
+  background: #409eff;
+  flex: 1;
+  padding: 20rpx 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+.community .nav .cell {
+  color: #fff;
+  text-align: center;
+  padding: 10rpx 0;
+  font-size: 32rpx;
+}
+.community .aside {
+  overflow-y: scroll;
+  background: #f8f8f8;
+  padding: 30rpx 25rpx;
+  flex: 3;
+  display: flex;
+  justify-content: space-around;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+.community .aside .searchBar {
+  width: 88%;
+  height: 60rpx;
+  border-radius: 30rpx;
+  border: 2rpx solid #454545;
+}
+.community .aside .searchBar input {
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 28rpx;
+  padding-left: 1em;
+}
+.community .aside .item {
+  margin: 30rpx 0;
+  width: 480rpx;
+  background: #fff;
+  padding: 20rpx;
+}
+.community .aside .item .protrait {
+  display: flex;
+}
+.community .aside .item .protrait image {
+  display: inline-block;
+  height: 60rpx;
+  width: 60rpx;
+  vertical-align: middle;
+}
+.community .aside .item .protrait .right-part {
+  flex: 1;
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 20rpx;
+}
+.community .aside .item .protrait .right-part .header {
+  display: flex;
+  font-size: 28rpx;
+  justify-content: space-between;
+  align-items: center;
+}
+.community .aside .item .protrait .right-part .header .pariseNum {
+  color: #b2b2b2;
+  font-size: 25rpx;
+}
+.community .aside .item .protrait .right-part .content {
+  padding-top: 20rpx;
+  font-size: 25rpx;
+}
+.community .aside .item .remark {
+  background: #f8f8f8;
+  margin: 20rpx 0 0 80rpx;
+  padding: 20rpx;
+  border-radius: 15rpx;
+}
+.community .aside .item .remark .title {
+  font-size: 25rpx;
+  border-bottom: 2rpx solid #b2b2b2;
+  margin-bottom: 10rpx;
+  padding-bottom: 10rpx;
+}
+.community .aside .item .remark .conment-item {
+  font-size: 25rpx;
+}
+.community .aside .item .panel {
+  padding: 40rpx 0 20rpx 80rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.community .aside .item .panel > view {
+  width: 140rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  font-size: 30rpx;
+  box-sizing: border-box;
+}
+.community .aside .item .panel .parise {
+  color: #fff;
+  background: #409eff;
+}
+.community .aside .item .panel .comment {
+  background: #fff;
+  border: 2rpx solid #409eff;
+  color: #409eff;
+}

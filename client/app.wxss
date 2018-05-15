@@ -1,4 +1,5 @@
 /**app.wxss**/
+@import "/utils/font_lee/iconfont.wxss";
 .container {
   display: flex;
   flex-direction: column;

@@ -1,0 +1,4 @@
+<!--pages/common/gruop/index.wxml-->
+<view class="group">
+    <slot></slot>
+</view>

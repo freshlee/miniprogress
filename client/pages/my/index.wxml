@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<view class="loginPage">
+  <!-- 用户登录测试 -->
+  <!-- <view class="userinfo" bindtap="login">
+      <image
+          class="userinfo-avatar"
+          src="{{logged ? userInfo.avatarUrl : './user-unlogin.png'}}"
+          background-size="cover"
+      ></image>
+      <view>
+          <text class="userinfo-nickname">{{logged ? userInfo.nickName : '点击测试登录接口'}}</text>
+          <text class="userinfo-nickname" wx:if="{{logged}}">{{userInfo.lastLoginTime}}</text>
+      </view>
+  </view> -->
+  <view class="userinfo">
+    <view class="avatar">
+      <image src="{{logged ? userInfo.avatarUrl : './user-unlogin.png'}}"  />
+      <p class="username" bindtap="login">{{logged ? userInfo.nickName : '点击登录'}}</p>
+    </view>
+  </view>
+  <group>
+    <cell wx:for="{{itemList}}" title="{{item.title}}" wx:key="{{item}}">
+    </cell>
+  </group>
+</view>

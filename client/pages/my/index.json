@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "cell": "../common/cell/index",
+    "group": "../common/group/index"
+  }
+}

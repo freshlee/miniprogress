@@ -1,0 +1,49 @@
+<!--pages/community/index.wxml-->
+<view class="community">
+  <view class="nav">
+    <view class="cell" wx:for="{{5}}" bindtap='goNext'>
+      类别名称
+    </view>
+  </view>
+  <view class="aside">
+    <view class="searchBar">
+      <input type="text" placeholder="请输入"/>
+    </view>
+    <view class="item" wx:for="{{8}}">
+      <view class="protrait">
+        <image src="../../image/protrait.png"/>
+        <view class="right-part">
+          <view class="header">
+            <view class="name">
+              你的名字
+            </view>
+            <view class="pariseNum">
+              20赞
+            </view>
+          </view>
+          <view class="content">
+          这是一段很长很长的文字这是一段很长很长的文字
+          这是一段很长很长的文字这是一段很长很长的文字
+          这是一段很长很长的文字这是一段很长很长的文字
+          </view>
+        </view>
+      </view>
+      <view class="remark">
+        <view class="title">
+          评论
+        </view>
+        <view class="conment-item">
+          lee: 真是个大美女
+        </view>
+      </view>
+      <view class="panel">
+        <view class="comment">
+          评论
+        </view>
+        <view class="parise">
+          不错哦
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

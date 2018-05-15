@@ -1,0 +1,15 @@
+.cell {
+  padding: 0 30rpx;
+}
+.cell .container {
+  border-bottom: 1rpx solid #d9d9d9;
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx 0;
+}
+.cell .container .title {
+  font-size: 32rpx;
+}
+.cell .container .value {
+  color: #b2b2b2;
+}

@@ -1,0 +1,117 @@
+
+@import "../../main.less";
+.community{
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  &>view{
+  }
+  .nav{
+    background: @maincolor;
+    flex: 1;
+    padding: 20rpx 0;
+    box-sizing: border-box;
+    height: 100%;
+    .cell{
+      color: #fff;
+      text-align: center;
+      padding: 10rpx 0;
+      font-size: 32rpx;
+    }
+  }
+  .aside{
+    overflow-y: scroll;
+    background: @greyBg;
+    padding: 30rpx 25rpx;
+    flex: 3;
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    .searchBar {
+      width: 88%;
+      height: 60rpx;
+      border-radius: 30rpx;
+      border: 2rpx solid #454545;
+      input{
+        height: 60rpx;
+        line-height: 60rpx;
+        font-size: 28rpx;
+        padding-left: 1em;
+      }
+    }
+    .item{
+      margin: 30rpx 0;
+      width: 480rpx;
+      background: #fff;
+      padding: 20rpx;
+      .protrait{
+        display: flex;
+        image{
+          display: inline-block;
+          height: 60rpx;
+          width: 60rpx;
+          vertical-align: middle;
+        }
+        .right-part{
+          flex: 1;
+          display: inline-block;
+          vertical-align: middle;
+          padding-left: 20rpx;
+          .header{
+            display: flex;
+            font-size: 28rpx;
+            justify-content: space-between;
+            align-items: center;
+            .pariseNum{
+              color: @grey;
+              font-size: 25rpx;
+            }
+          }
+          .content{
+            padding-top: 20rpx; 
+            font-size: 25rpx;
+          }
+        }
+      }
+      .remark{
+        background: @greyBg;
+        margin: 20rpx 0 0 80rpx;
+        padding: 20rpx;
+        border-radius: 15rpx;
+        .title{
+          font-size: 25rpx;
+          border-bottom: 2rpx solid @grey;
+          margin-bottom: 10rpx;
+          padding-bottom: 10rpx;
+        }
+        .conment-item{
+          font-size: 25rpx;
+        }
+      }
+      .panel{
+        padding: 40rpx 0 20rpx 80rpx;
+        display: flex;
+        justify-content: space-between;
+        &>view{
+          width: 140rpx;
+          height: 60rpx;
+          line-height: 60rpx;
+          text-align: center;
+          border-radius: 10rpx;
+          font-size: 30rpx;
+          box-sizing: border-box;
+        }
+        .parise{
+          color: #fff;
+          background: @maincolor;
+        }
+        .comment{
+          background: #fff;
+          border:2rpx solid @maincolor;
+          color: @maincolor;
+        }
+      }
+    }
+  }
+}
