@@ -1,1 +1,115 @@
-/* pages/home/index.wxss */
+page {
+  height: 100%;
+}
+.home image {
+  height: 100%;
+  width: 100%;
+}
+.home .title {
+  border-left: 7rpx solid #409eff;
+  padding-left: 15rpx;
+  margin: 20rpx 0 20rpx 30rpx;
+}
+.home .nav {
+  background: #fff;
+  width: 650rpx;
+  left: 50%;
+  transform: translate(-50%, -80rpx);
+  box-shadow: 0 5rpx 10rpx #f8f8f8;
+  margin-bottom: -80rpx;
+  position: relative;
+  border-radius: 15rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  padding: 25rpx;
+}
+.home .nav .item {
+  flex: 25%;
+  text-align: center;
+  font-size: 0;
+  -webkit-text-size-adjust: none;
+  margin: 10rpx 0;
+}
+.home .nav .item .item-pic {
+  display: inline-block;
+  border-radius: 50%;
+  height: 120rpx;
+  width: 120rpx;
+  background: #f8f8f8;
+}
+.home .field .item-container {
+  display: flex;
+  padding: 0 25rpx;
+  flex-wrap: wrap;
+}
+.home .field .item-container .item {
+  width: 50%;
+  height: 180rpx;
+  overflow: hidden;
+}
+.home .field .item-container .item .image-box {
+  height: 100%;
+}
+.home .field .item-container .item:first-of-type {
+  width: 100%;
+  height: 280rpx;
+}
+.home .field .item-container .item:first-of-type .image-box {
+  transform: translateY(-100%);
+}
+.home .field .item-container .item:first-of-type .image-box image {
+  display: block;
+}
+.home .field .item-container .item:first-of-type .image-box.active {
+  animation: itemMove1 2s infinite normal forwards;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+}
+.home .field .item-container .item:nth-of-type(2) .image-box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  transform: translateX(-100%);
+}
+.home .field .item-container .item:nth-of-type(2) .image-box image {
+  height: 100%;
+}
+.home .field .item-container .item:nth-of-type(2) .image-box.active {
+  animation: itemMove2 2s infinite normal forwards;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+}
+.home .field .item-container .item:nth-of-type(3) .image-box.active {
+  animation: itemMove3 2s infinite normal forwards;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+}
+.home .field .item-container .item:nth-of-type(3) .image-box.active image {
+  display: block;
+}
+@keyframes itemMove1 {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes itemMove2 {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes itemMove3 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
