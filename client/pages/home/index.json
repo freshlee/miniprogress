@@ -1,1 +1,6 @@
-{}
+{
+    "usingComponents": {
+      "cell": "../common/cell/index",
+      "field": "../common/field/index"
+    }
+  }

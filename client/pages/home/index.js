@@ -14,9 +14,9 @@ Page({
   },
   loop () {
     let BannerBox = [
-      '../../image/banner/banner3.png',
-      '../../image/banner/banner4.jpg',
-      '../../image/banner/banner5.jpg'
+      '../../../image/banner/banner3.png',
+      '../../../image/banner/banner4.jpg',
+      '../../../image/banner/banner5.jpg'
     ]
     let doloop = () => {
       setTimeout(() => {
