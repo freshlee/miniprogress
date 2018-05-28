@@ -25,58 +25,49 @@ page {
 }
 .field .item-container .item:first-of-type .image-box {
   transform: translateY(-100%);
+  transition-property: transform;
+  transition-duration: 2s;
 }
 .field .item-container .item:first-of-type .image-box image {
   display: block;
 }
-.field .item-container .item:first-of-type .image-box.active {
-  animation: itemMove1 2s infinite normal forwards;
+.field .item-container .item:first-of-type .active {
+  transform: translateY(0) !important;
+  transition-duration: 0s !important;
   backface-visibility: hidden;
   transform-style: preserve-3d;
 }
 .field .item-container .item:nth-of-type(2) .image-box {
+  transition-property: transform;
+  transition-duration: 2s;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  transform: translateX(-100%);
+  transform: translateX(0%);
 }
 .field .item-container .item:nth-of-type(2) .image-box image {
   height: 100%;
 }
-.field .item-container .item:nth-of-type(2) .image-box.active {
-  animation: itemMove2 2s infinite normal forwards;
+.field .item-container .item:nth-of-type(2) .active {
+  transform: translateX(-100%) !important;
+  transition-duration: 0s !important;
   backface-visibility: hidden;
   transform-style: preserve-3d;
 }
-.field .item-container .item:nth-of-type(3) .image-box.active {
-  animation: itemMove3 2s infinite normal forwards;
+.field .item-container .item:nth-of-type(3) .image-box {
+  transition-property: transform;
+  transition-duration: 2s;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  transform: translateX(0%);
+}
+.field .item-container .item:nth-of-type(3) .image-box image {
+  height: 100%;
+}
+.field .item-container .item:nth-of-type(3) .active {
+  transform: translateX(-100%) !important;
+  transition-duration: 0s !important;
   backface-visibility: hidden;
   transform-style: preserve-3d;
-}
-.field .item-container .item:nth-of-type(3) .image-box.active image {
-  display: block;
-}
-@keyframes itemMove1 {
-  from {
-    transform: translateY(-100%);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
-@keyframes itemMove2 {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-@keyframes itemMove3 {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-100%);
-  }
 }

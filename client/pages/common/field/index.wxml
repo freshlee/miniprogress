@@ -6,18 +6,18 @@
     <view class="item-container">
       <view class="item" wx:for="{{containerDemo}}">
         <view wx:if="{{index === 0}}" class="image-box {{animationStatus ? 'active' : ''}}"
-          style="animation-play-state:{{animationStatus}}"
+          style="transition-duration: {{animationStatus ? '2s' : '0'}}"
         >
           <image src="{{item.url2}}" />
           <image src="{{item.url1}}" />
         </view>
         <view wx:if="{{index === 1}}" class="image-box {{animationStatus ? 'active' : ''}}"
-          style="animation-play-state:{{animationStatus}}">
+          style="transition-duration: {{animationStatus ? '2s' : '0'}}">
           <image src="{{item.url2}}" />
           <image src="{{item.url1}}" />
         </view>
         <view wx:if="{{index === 2}}" class="image-box {{animationStatus ? 'active' : ''}}"
-          style="animation-play-state:{{animationStatus}}">
+          style="transition-duration: {{animationStatus ? '2s' : '0'}}">
           <image src="{{item.url1}}" />
           <image src="{{item.url2}}" />
         </view>

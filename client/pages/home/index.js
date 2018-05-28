@@ -22,46 +22,30 @@ Page({
       setTimeout(() => {
         let piece = BannerBox.shift()
         BannerBox.push(piece)
-        // BannerBox.unshift()
         this.setData({
-          animationStatus: false,
+          animationStatus: false
+        })
+      console.log(BannerBox)
+      setTimeout(() => {
+        this.setData({
           containerDemo: [
-            {
-              url1: BannerBox[0],
-              url2: BannerBox[0],
-            },
             {
               url1: BannerBox[1],
-              url2: BannerBox[1],
-            },
-            {
-              url1: BannerBox[2],
-              url2: BannerBox[2],
-            }
-          ]
-        })
-        this.setData({
-          containerDemo: [
-            {
-              url1: BannerBox[0],
-              url2: BannerBox[1],
+              url2: BannerBox[0],
             },
             {
               url1: BannerBox[1],
               url2: BannerBox[2],
             },
             {
-              url1: BannerBox[2],
-              url2: BannerBox[0],
+              url1: BannerBox[0],
+              url2: BannerBox[2],
             }
-          ]
+          ],
+          animationStatus: true,
         })
-        setTimeout(() => {
-          this.setData({
-            animationStatus: true
-          })
-          doloop()
-        }, 100)
+        doloop()
+      }, 2000)
       }, 2000)
     }
     doloop()
